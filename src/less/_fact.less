@@ -1,0 +1,39 @@
+.fact{
+    float: left;
+    width: 20%;
+}
+.fact + .fact{
+    width: 30%;
+}
+.fact.fact_wide{
+    width: 50%;
+}
+.fact-accent{
+    font-size: 46px;
+    font-weight: 500;
+}
+.fact-desc{}
+
+@media (max-width: @screen-xs-max){
+    .fact,
+    .fact + .fact{
+        margin: 15px 0;
+        float: none;
+        width: auto;
+    }
+    .fact-accent{
+        font-size: 42px;
+    }
+}
+
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max){
+    .fact,
+    .fact + .fact{
+        width: 40%;
+    }
+    .fact + .fact + .fact{
+        margin-top: 40px;
+        width: 100%;
+        clear: both;
+    }
+}

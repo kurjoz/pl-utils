@@ -1,0 +1,109 @@
+.text-icon{
+    margin: 0;
+    float: left;
+    padding-right: 15px;
+    width: 25%;
+}
+.text-icon__icon{
+    margin: 0;
+}
+.text-icon__hd{
+    font-size: 24px;
+}
+.text-icon__text{
+    margin-top: 30px;
+    display: block;
+}
+
+.text-icon.text-icon_left{
+    margin: 0 0 20px;
+    width: 33.333333333%;
+    position: relative;
+    display: table;
+    min-height: 60px;
+}
+.text-icon.text-icon_left + .text-icon.text-icon_left + .text-icon.text-icon_left + .text-icon.text-icon_left{
+    margin-bottom: 0;
+    //border-color: green;
+}
+
+.text-icon_left .text-icon__icon{
+    display: table-cell;
+    vertical-align: middle;
+    width: 60px;
+
+}
+
+.text-icon_left .text-icon__icon .icon{
+    background-position: center;
+}
+.text-icon_left .text-icon__text{
+    padding: 0 0 0 20px;
+    display: table-cell;
+    vertical-align: middle;
+    color: inherit;
+    transition: all 200ms linear;
+    &:hover,
+    &:focus{
+        color: @link-color;
+        text-decoration: none;
+    }
+}
+@media (max-width: 510px){
+    .text-icon.text-icon_left{
+        width: 100%!important;
+    }
+}
+@media (max-width: @screen-xs-max){
+    .text-icon,
+    .text-icon.text-icon_left{
+        width: auto;
+        float: none;
+    }
+    .text-icon{
+        margin: 0 0 50px;
+    }
+    .text-icon:last-child{
+        margin-bottom: 0;
+    }
+    .text-icon__icon{
+        display: table-cell;
+        vertical-align: middle;
+        width: 75px;
+    }
+    .text-icon__text{
+        padding: 0 0 0 10px;
+        display: table-cell;
+        vertical-align: middle;
+        clear: none;
+        width: auto;
+    }
+    .text-icon.text-icon_left{
+        margin: 0 auto 35px;
+        width: 100%;
+    }
+    .text-icon.text-icon_left + .text-icon.text-icon_left + .text-icon.text-icon_left + .text-icon.text-icon_left{
+        margin-bottom: 35px;
+    }
+
+}
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+    .text-icon,
+    .text-icon.text-icon_left{
+        margin-bottom: 35px;
+        width: 50%;
+    }
+    .text-icon.text-icon_left + .text-icon.text-icon_left + .text-icon.text-icon_left + .text-icon.text-icon_left{
+        margin-bottom: 35px;
+    }
+
+    .text-icon{
+        min-height: 200px;
+    }
+    .text-icon{
+        min-height: 200px;
+    }
+    .text-icon.text-icon_left{
+        min-height: 60px;
+    }
+}

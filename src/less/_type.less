@@ -1,0 +1,48 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+
+}
+h1{
+    margin: 0 0 50px;
+    font-size: 44px;
+    line-height: 1.2307692308;
+}
+h2{
+    margin: 0 0 50px;
+    font-size: 44px;
+    &.has-sub{
+        margin: 0;
+    }
+}
+.sub-hd{
+    font-size: 18px;
+    > i{
+        color: @link-color;
+        font-style: normal;
+    }
+}
+b{
+    font-weight: 600;
+}
+i.brand{
+    font-style: normal;
+    //color: #e10018;
+}
+.link_alt,
+.link_alt:hover{
+
+    color: #17acf9;
+
+}
+
+@media (max-width: @screen-xs-max) {
+    h1,h2{
+        margin-bottom: 40px;
+        font-size: 32px;
+        line-height: 1.6;
+    }
+}

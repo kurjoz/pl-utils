@@ -1,0 +1,57 @@
+.btn {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 20px;
+    text-align: center;
+    text-transform: lowercase;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-left-width: 0;
+    border-bottom-width: 3px;
+
+
+    &,
+    &:active,
+    &.active {
+        &:focus,
+        &.focus {
+        }
+    }
+
+    &:hover,
+    &:focus,
+    &.focus {
+    }
+
+    &:active,
+    &.active {
+    }
+
+    &.disabled,
+    &[disabled],
+    fieldset[disabled] & {
+    }
+    a& {
+        &.disabled,
+        fieldset[disabled] & {
+        }
+    }
+}
+
+.btn-primary{
+
+}
+.btn.btn-nav-action{
+    margin: 17px 10px 0;
+    padding: 4px 20px;
+    width: auto;
+    font-size: 14px;
+    background-color: #757575;
+    border-bottom: 2px solid #646464;
+    color: #fff!important;
+    min-width: 0;
+    text-transform: lowercase;
+    &:hover{
+        background-color: #5b5b5b;
+    }
+}

@@ -1,0 +1,129 @@
+//regions dropdown:
+.regions-dropdown{
+    margin: 0 0 20px;
+
+}
+.regions-dropdown > .dropdown-toggle{
+    margin: 0;
+    padding: 10px 10px 10px 25px;
+    background-color: #fff!important;
+    border: none;
+    color: #000!important;
+    font-size: 16px;
+    font-weight: normal;
+    text-transform: none;
+    background-image: url('../im/ico-map-marker.png');
+    background-position: 10px center;
+    background-repeat: no-repeat;
+}
+.regions-dropdown.open > .dropdown-toggle.btn-default,
+.regions-dropdown.open > .dropdown-toggle.btn-default:active:focus,
+.regions-dropdown.open > .dropdown-toggle.btn-default:active:hover{
+    color: #000!important;
+    background-color: #fff!important;
+}
+.regions-dropdown > .dropdown-toggle .caret{
+    margin-left: 5px;
+    width: 15px;
+    height: 15px;
+    background-size: 100% auto;
+}
+.regions-dropdown .dropdown-menu{
+    width: 100%;
+    border-radius: 0;
+}
+.regions-dropdown > .dropdown-toggle .selected_region{
+    color: #ff0000;
+}
+.regions-dropdown .dropdown-menu .dropdown-menu_col{
+    padding: 0 0 0 20px;
+    float: left;
+    width: 25%;
+    list-style-type: none;
+}
+.regions-dropdown .dropdown-menu .dropdown-menu_col ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 16px;
+}
+.regions-dropdown .dropdown-menu .dropdown-menu_col ul li{}
+.regions-dropdown .dropdown-menu .dropdown-menu_col ul li a{
+    padding: 5px 0;
+    color: #585858;
+    display: block;
+
+}
+//Regions navbar:
+.navbar.navbar-default.navbar-regions{
+    box-shadow: none;
+    border-radius: 0;
+    background: transparent;
+}
+.navbar.navbar-default.navbar-regions .navbar-nav{
+    width: 100%;
+}
+.navbar.navbar-default.navbar-regions .navbar-nav >li{
+    width: 25%;
+    text-align: center;
+}
+
+.navbar.navbar-default.navbar-regions .navbar-nav >li > a{
+    font-weight: normal;
+    font-size: 18px;
+    color: #000000;
+}
+.navbar.navbar-default.navbar-regions .navbar-nav >li.active > a{
+    color: #00b7fd;
+    background: transparent;
+}
+
+.navbar.navbar-default.navbar-regions .navbar-nav >li > a:hover{
+    text-decoration: underline;
+}
+//Regions carousel:
+.carousel-control{
+    width: 10%;
+
+}
+.carousel-control.left{
+    background-image: url('../im/carousel-arrow-l.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.carousel-control.right{
+    background-image: url('../im/carousel-arrow-r.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.regions-grid{
+    &:after{
+        content: '';
+        display: table;
+        width: 100%;
+        clear: both;
+    }
+}
+.regions-grid-item{
+    margin: 0;
+    padding: 2px;
+    float: left;
+    width: 20%;
+    height: 122px;
+}
+
+.regions-grid-item__logo{
+    display: block;
+    height: 118px;
+    line-height: 108px;
+    border: 2px solid #fff;
+    text-align: center;
+
+    > img{
+        margin: 0 auto;
+        display: inline-block;
+        max-height: 80px;
+        max-width: 100%;
+        vertical-align: middle;
+    }
+}

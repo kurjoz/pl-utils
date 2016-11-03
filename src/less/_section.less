@@ -1,0 +1,88 @@
+@section-color-primary: #74b3ba;
+@section-color-secondary: #d6f1ef;
+@section-color-ternary: #ffd828;
+.section{
+    padding: 120px 0;
+    display: table;
+    width: 100%;
+    position: relative;
+
+    > .section__aligner{
+        display: table-cell;
+        vertical-align: middle;
+    }
+}
+.section_hasbg{
+    padding: 0;
+    height: 574px;
+    background-color: #e0e0e0;
+    background-image: url('../im/promo-bg_underlay.jpg');
+    background-repeat: repeat-x;
+    background-position: left top;
+
+    .btn{
+        min-width: 260px;
+    }
+
+    .section__aligner{
+        background-image: url('../im/promo-bg.jpg');
+        background-repeat: no-repeat;
+        -webkit-background-size: auto 100%;
+        background-size: auto 100%;
+        background-position: right top;
+    }
+}
+.section_hasbg_primary{
+    background-color: @section-color-primary;
+    color: #fff;
+}
+.section_hasbg_secondary{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d6f1ef+0,b4e5e1+100 */
+    background: #d6f1ef; /* Old browsers */
+    background: -moz-linear-gradient(top,  #d6f1ef 0%, #b4e5e1 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #d6f1ef 0%,#b4e5e1 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #d6f1ef 0%,#b4e5e1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6f1ef', endColorstr='#b4e5e1',GradientType=0 ); /* IE6-9 */
+    h2{
+        margin: 0;
+    }
+    .sub-hd{
+        margin-bottom: 20px;
+    }
+}
+.section_hasbg_ternary{
+    background-color: @section-color-ternary;
+}
+.section_hasbg{
+    h1{
+        max-width: 55%;
+    }
+}
+
+//Responsive:
+@media (max-width: @screen-xs-max) {
+    .section{
+        padding: 70px 15px;
+    }
+    .section_hasbg{
+        height: auto;
+    }
+    .section_hasbg:before{
+        display: none;
+    }
+    .section_hasbg{
+        h1{
+            max-width: none;
+        }
+    }
+}
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max){
+}
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max){
+}
+
+@media (min-width: @screen-lg-min) {
+    .section.section_nobg .section__aligner h2{
+        margin-bottom: 0;
+    }
+}
