@@ -701,6 +701,7 @@ i.brand {
 .text-icon-sm:hover {
   color: #ff0006;
   text-decoration: none;
+  font-weight: bold;
 }
 .text-icon-sm:hover .icon_light {
   background-image: url('../im/ico/icon_light-act.png');
@@ -1217,17 +1218,14 @@ i.brand {
   opacity: 0;
 }
 .section .text-icon-step + .text-icon-step,
-.section .text-icon__top + .text-icon__top,
 .section .fact + .fact {
   transition-delay: 600ms;
 }
 .section .text-icon-step + .text-icon-step + .text-icon-step,
-.section .text-icon__top + .text-icon__top + .text-icon__top,
 .section .fact + .fact + .fact {
   transition-delay: 900ms;
 }
 .section .text-icon-step + .text-icon-step + .text-icon-step + .text-icon-step,
-.section .text-icon__top + .text-icon__top + .text-icon__top + .text-icon__top,
 .section .fact + .fact + .fact + .fact {
   transition-delay: 1200ms;
 }
