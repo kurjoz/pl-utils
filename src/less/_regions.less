@@ -1,8 +1,8 @@
 //regions dropdown:
 .regions-dropdown{
     margin: 0 0 20px;
-
 }
+
 .regions-dropdown > .dropdown-toggle{
     margin: 0;
     padding: 10px 10px 10px 25px;
@@ -12,26 +12,32 @@
     font-size: 16px;
     font-weight: normal;
     text-transform: none;
-    background-image: url('../im/ico-map-marker.png');
+    background-image: url('../im/ico-map-marker.png')!important;
     background-position: 10px center;
     background-repeat: no-repeat;
 }
+
 .regions-dropdown.open > .dropdown-toggle.btn-default,
 .regions-dropdown.open > .dropdown-toggle.btn-default:active:focus,
 .regions-dropdown.open > .dropdown-toggle.btn-default:active:hover{
     color: #000!important;
     background-color: #fff!important;
 }
+
 .regions-dropdown > .dropdown-toggle .caret{
     margin-left: 5px;
     width: 15px;
     height: 15px;
     background-size: 100% auto;
 }
+
 .regions-dropdown .dropdown-menu{
+    padding-top: 15px;
+    padding-bottom: 15px;
     width: 100%;
     border-radius: 0;
 }
+
 .regions-dropdown > .dropdown-toggle .selected_region{
     color: #ff0000;
 }
@@ -60,6 +66,11 @@
     border-radius: 0;
     background: transparent;
 }
+
+.navbar.navbar-default.navbar-regions .navbar-collapse{
+    padding-left: 0;
+    padding-right: 0;
+}
 .navbar.navbar-default.navbar-regions .navbar-nav{
     width: 100%;
 }
@@ -69,6 +80,8 @@
 }
 
 .navbar.navbar-default.navbar-regions .navbar-nav >li > a{
+    padding-top: 15px;
+    padding-bottom: 15px;
     font-weight: normal;
     font-size: 18px;
     color: #000000;
@@ -76,6 +89,8 @@
 .navbar.navbar-default.navbar-regions .navbar-nav >li.active > a{
     color: #00b7fd;
     background: transparent;
+    border: 1px solid #00b7fd;
+    border-radius: 5px;
 }
 
 .navbar.navbar-default.navbar-regions .navbar-nav >li > a:hover{
