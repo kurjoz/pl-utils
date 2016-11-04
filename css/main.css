@@ -38,6 +38,7 @@ h2.has-sub {
   margin: 0;
 }
 .sub-hd {
+  margin-bottom: 20px;
   font-size: 18px;
 }
 .sub-hd > i {
@@ -605,7 +606,8 @@ i.brand {
   }
   .text-icon.text-icon__top {
     padding: 20px;
-    min-height: 335px;
+    min-height: 280px;
+    width: 50%;
   }
   .text-icon.text-icon__top .text-icon__hd {
     font-size: 22px;
@@ -698,6 +700,7 @@ i.brand {
 }
 .text-icon-sm:hover {
   color: #ff0006;
+  text-decoration: none;
 }
 .text-icon-sm:hover .icon_light {
   background-image: url('../im/ico/icon_light-act.png');
@@ -774,7 +777,7 @@ i.brand {
   font-size: 16px;
   font-weight: normal;
   text-transform: none;
-  background-image: url('../im/ico-map-marker.png');
+  background-image: url('../im/ico-map-marker.png') !important;
   background-position: 10px center;
   background-repeat: no-repeat;
 }
@@ -791,6 +794,8 @@ i.brand {
   background-size: 100% auto;
 }
 .regions-dropdown .dropdown-menu {
+  padding-top: 15px;
+  padding-bottom: 15px;
   width: 100%;
   border-radius: 0;
 }
@@ -819,6 +824,10 @@ i.brand {
   border-radius: 0;
   background: transparent;
 }
+.navbar.navbar-default.navbar-regions .navbar-collapse {
+  padding-left: 0;
+  padding-right: 0;
+}
 .navbar.navbar-default.navbar-regions .navbar-nav {
   width: 100%;
 }
@@ -827,6 +836,8 @@ i.brand {
   text-align: center;
 }
 .navbar.navbar-default.navbar-regions .navbar-nav > li > a {
+  padding-top: 15px;
+  padding-bottom: 15px;
   font-weight: normal;
   font-size: 18px;
   color: #000000;
@@ -834,6 +845,8 @@ i.brand {
 .navbar.navbar-default.navbar-regions .navbar-nav > li.active > a {
   color: #00b7fd;
   background: transparent;
+  border: 1px solid #00b7fd;
+  border-radius: 5px;
 }
 .carousel-control {
   width: 10%;
