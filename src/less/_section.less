@@ -14,7 +14,7 @@
 }
 .section_hasbg{
     padding: 0;
-    height: 574px;
+    height: 500px;
     background-color: #e0e0e0;
     background-image: url('../im/promo-bg_underlay.jpg');
     background-repeat: repeat-x;
@@ -25,7 +25,7 @@
     }
 
     .section__aligner{
-        background-image: url('../im/promo-bg.jpg');
+        background-image: url('../im/promo-bg.png');
         background-repeat: no-repeat;
         -webkit-background-size: auto 100%;
         background-size: auto 100%;
@@ -66,6 +66,9 @@
     }
     .section_hasbg{
         height: auto;
+        .section__aligner{
+            background-image: none;
+        }
     }
     .section_hasbg:before{
         display: none;
@@ -77,6 +80,9 @@
     }
 }
 @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max){
+    .section_hasbg .section__aligner{
+        background-image: none;
+    }
 }
 @media (min-width: @screen-md-min) and (max-width: @screen-md-max){
 }

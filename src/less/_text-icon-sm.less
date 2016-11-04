@@ -4,6 +4,27 @@
     float: left;
     width: 20%;
     text-align: center;
+    color: #fff;
+
+    &:hover{
+        color: @link-color;
+
+        .icon_light{
+            background-image: url('../im/ico/icon_light-act.png');
+        }
+        .icon_gas{
+            background-image: url('../im/ico/icon_gas-act.png');
+        }
+        .icon_heat{
+            background-image: url('../im/ico/icon_heat-act.png');
+        }
+        .icon_water{
+            background-image: url('../im/ico/icon_water-act.png');
+        }
+        .icon_home-circle{
+            background-image: url('../im/ico/icon_home-circle-act.png');
+        }
+    }
 }
 .text-icon-sm__icon{
     margin: 0;
@@ -11,5 +32,11 @@
 .text-icon-sm__text{
     margin-top: 30px;
     display: block;
-    color: #fff;
+}
+
+@media (max-width: @screen-xs-max) {
+    .text-icon-sm{
+        width: 50%;
+
+    }
 }
