@@ -26,7 +26,7 @@ body {
   }
 }
 h1 {
-  margin: 0 0 50px;
+  margin: 0 0 40px;
   font-size: 44px;
   line-height: 1.2307692308;
 }
@@ -35,7 +35,7 @@ h2 {
   font-size: 44px;
 }
 h2.has-sub {
-  margin: 0;
+  margin: 0 0 20px;
 }
 .sub-hd {
   margin-bottom: 20px;
@@ -330,7 +330,7 @@ i.brand {
   /* IE6-9 */
 }
 .section_hasbg_secondary h2 {
-  margin: 0;
+  margin: 0 0 20px;
 }
 .section_hasbg_secondary .sub-hd {
   margin-bottom: 20px;
@@ -369,11 +369,6 @@ i.brand {
 @media (min-width: 768px) and (max-width: 991px) {
   .section_hasbg .section__aligner {
     background-image: none;
-  }
-}
-@media (min-width: 1200px) {
-  .section.section_nobg .section__aligner h2 {
-    margin-bottom: 0;
   }
 }
 @media (min-width: 1700px) {
