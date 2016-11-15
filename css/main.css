@@ -397,6 +397,8 @@ i.brand {
 .text-icon-step__icon > .icon {
   width: 72px;
   height: 72px;
+  background-size: 100% auto;
+  background-position: center;
 }
 .text-icon-sm__icon > .icon {
   width: 90px;
@@ -470,16 +472,16 @@ i.brand {
   background-image: url('../im/ico/icon_home-circle.png');
 }
 .icon_key {
-  background-image: url('../im/ico/icon_key.png');
+  background-image: url('../im/ico/icon_key.svg');
 }
 .icon_pointer-red {
-  background-image: url('../im/ico/icon_pointer-red.png');
+  background-image: url('../im/ico/icon_pointer-red.svg');
 }
 .icon_list-red {
-  background-image: url('../im/ico/icon_list-red.png');
+  background-image: url('../im/ico/icon_list-red.svg');
 }
 .icon_envelope-red {
-  background-image: url('../im/ico/icon_envelope-red.png');
+  background-image: url('../im/ico/icon_envelope-red.svg');
 }
 .icon_comfort {
   background-image: url('../im/ico/icon_comfort.png');
@@ -746,11 +748,14 @@ i.brand {
 @media (max-width: 767px) {
   .text-icon-sm {
     width: 50%;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
   .text-icon-sm:last-child {
     width: 100%;
     margin-bottom: 0;
+  }
+  .text-icon-sm__text {
+    margin-top: 10px;
   }
 }
 .fact {
