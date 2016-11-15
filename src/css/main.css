@@ -594,8 +594,8 @@ i.brand {
     padding: 30px;
     min-height: 0;
   }
-  .text-icon.text-icon__top:nth-child(3) {
-    margin: 0 0 50px;
+  .text-icon.text-icon__top:nth-child(4) {
+    margin: 0;
   }
   .text-icon.text-icon__top .text-icon__text {
     padding: 0;
@@ -909,6 +909,7 @@ i.brand {
   height: 122px;
 }
 .regions-grid-item__logo {
+  padding: 5px;
   display: block;
   height: 118px;
   line-height: 108px;
@@ -974,6 +975,15 @@ i.brand {
   .regions-grid {
     padding-right: 50px;
     padding-left: 50px;
+  }
+}
+@media (max-width: 580px) {
+  .regions-grid {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .carousel-control {
+    display: none;
   }
 }
 @media (min-width: 992px) and (max-width: 1100px) {
