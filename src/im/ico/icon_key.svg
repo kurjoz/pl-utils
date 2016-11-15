@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="218px" height="218px" viewBox="0 0 218 218" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41 (35326) - http://www.bohemiancoding.com/sketch -->
+    <title>key</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="131.926578" y="37.4126567" width="54.3573739" height="38.1405834" rx="16"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="54.3573739" height="38.1405834" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <rect id="path-3" x="137.336504" y="42.2248496" width="43.891123" height="28.3518776" rx="12"></rect>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="43.891123" height="28.3518776" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="key" stroke="#FF0000">
+            <path d="M85.8159004,94.2323909 C82.7108752,86.6077459 81,78.2665005 81,69.5255032 C81,33.336767 110.325349,4 146.5,4 C182.674651,4 212,33.336767 212,69.5255032 C212,105.714239 182.674651,135.051006 146.5,135.051006 C138.244706,135.051006 130.346111,133.523199 123.071335,130.734806 L107.174316,144.09084 L107.108398,166.83535 L103.963379,172.479148 L96.0537109,175.275647 L80.440918,175.275647 L80.1782227,193.105828 L73.9038086,199.279618 L53.1054687,199.270337 L39.9267578,211 L9.80566406,210.922822 L4.06494141,204.898504 L4.15039062,174.468203 L85.8159004,94.2323909 Z" id="Combined-Shape" stroke-width="3"></path>
+            <path d="M96.2540113,84.7973914 C94.7882128,79.9647107 94,74.8371913 94,69.5255032 C94,40.5192643 117.505051,17.0050617 146.5,17.0050617 C175.494949,17.0050617 199,40.5192643 199,69.5255032 C199,98.531742 175.494949,122.045945 146.5,122.045945 C136.330501,122.045945 126.836337,119.15337 118.794772,114.145788 L94.1044922,138.129841 L94.1044922,162.977403 L73.2553711,162.955422 L67.1005859,169.168289 L67.1582031,187.169436 L45.15625,187.166017 L33.1796875,199.102303 L15.1293945,199.034405 L15.1015625,181.168077 C15.1015625,181.168077 59.2329841,141.845987 96.9277344,99.4306972 C98.3540484,96.6381253 97.2752127,89.6716336 96.2540113,84.7973914 Z" id="Combined-Shape" stroke-width="3"></path>
+            <use id="Rectangle" mask="url(#mask-2)" stroke-width="6" fill="#FFFFFF" transform="translate(159.105265, 56.482948) rotate(43.000000) translate(-159.105265, -56.482948) " xlink:href="#path-1"></use>
+            <use id="Rectangle-2" mask="url(#mask-4)" stroke-width="6" transform="translate(159.282065, 56.400788) rotate(43.000000) translate(-159.282065, -56.400788) " xlink:href="#path-3"></use>
+        </g>
+    </g>
+</svg>
