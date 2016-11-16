@@ -155,8 +155,8 @@ i.brand {
   font-size: 16px;
 }
 .caret {
-  margin-top: 5px;
-  margin-left: 6px;
+  margin-top: 2px;
+  margin-left: 2px;
   border: none;
   width: 13px;
   height: 9px;
@@ -361,7 +361,6 @@ i.brand {
 .adv-list {
   margin: 30px 0;
   padding: 0 0 0 20px;
-  font-size: 15px;
 }
 .adv-list > li {
   margin: 5px 0;
@@ -739,7 +738,7 @@ i.brand {
   margin: 0;
 }
 .text-icon-sm__text {
-  margin-top: 30px;
+  margin-top: 10px;
   margin-left: -10px;
   display: block;
   max-width: 110px;
@@ -799,16 +798,36 @@ i.brand {
 }
 .regions-dropdown > .dropdown-toggle {
   margin: 0;
-  padding: 10px 10px 10px 25px;
+  padding: 10px 10px 10px 10px;
   background-color: #fff!important;
   border: none;
   color: #000!important;
   font-size: 16px;
   font-weight: normal;
   text-transform: none;
-  background-image: url('../im/ico-map-marker.png') !important;
-  background-position: 10px center;
-  background-repeat: no-repeat;
+}
+.regions-dropdown > .dropdown-toggle .glyphicon {
+  color: #504f4f;
+}
+.regions-dropdown > .dropdown-toggle .marker {
+  margin-right: 5px;
+  font-size: 13px;
+}
+.regions-dropdown > .dropdown-toggle .arrow {
+  margin-left: 5px;
+  font-size: 12px;
+}
+.regions-dropdown > .dropdown-toggle .arrow .glyphicon-menu-down {
+  display: inline-block;
+}
+.regions-dropdown > .dropdown-toggle .arrow .glyphicon-menu-up {
+  display: none;
+}
+.regions-dropdown.open > .dropdown-toggle .arrow .glyphicon-menu-down {
+  display: none;
+}
+.regions-dropdown.open > .dropdown-toggle .arrow .glyphicon-menu-up {
+  display: inline-block;
 }
 .regions-dropdown.open > .dropdown-toggle.btn-default,
 .regions-dropdown.open > .dropdown-toggle.btn-default:active:focus,
@@ -853,6 +872,21 @@ i.brand {
   border-radius: 0;
   background: transparent;
 }
+.navbar.navbar-default.navbar-regions .navbar-toggle {
+  background: none;
+}
+.navbar.navbar-default.navbar-regions .navbar-toggle .glyphicon-menu-down {
+  display: none;
+}
+.navbar.navbar-default.navbar-regions .navbar-toggle .glyphicon-menu-up {
+  display: inline-block;
+}
+.navbar.navbar-default.navbar-regions .navbar-toggle.collapsed .glyphicon-menu-down {
+  display: inline-block;
+}
+.navbar.navbar-default.navbar-regions .navbar-toggle.collapsed .glyphicon-menu-up {
+  display: none;
+}
 .navbar.navbar-default.navbar-regions .navbar-collapse {
   padding-left: 0;
   padding-right: 0;
@@ -880,6 +914,10 @@ i.brand {
 .carousel {
   margin: 0 auto;
   max-width: 1520px;
+}
+.carousel-indicators {
+  bottom: -50px;
+  display: none;
 }
 .carousel-control {
   width: 80px;
@@ -924,19 +962,18 @@ i.brand {
   vertical-align: middle;
 }
 .navbar.navbar-default.navbar-regions .nav-lbl {
+  padding: 0 30px;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  line-height: 70px;
+  line-height: 50px;
   background-color: #fff;
   color: #00b7fd;
-  font-size: 24px;
-  text-align: center;
-}
-.navbar.navbar-default.navbar-regions .navbar-toggle {
-  border: none;
+  font-size: 22px;
+  text-align: left;
+  cursor: pointer;
 }
 @media (max-width: 1199px) {
   .regions-grid-item {
@@ -946,8 +983,17 @@ i.brand {
     width: 50%;
   }
   .navbar.navbar-default.navbar-regions .navbar-collapse {
-    padding-left: 15px;
-    padding-right: 15px;
+    /*padding-left: 15px;
+        padding-right: 15px;*/
+  }
+  .navbar.navbar-default.navbar-regions {
+    min-height: 50px;
+  }
+  .navbar.navbar-default.navbar-regions .navbar-toggle {
+    border: none;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
   }
   .navbar.navbar-default.navbar-regions .navbar-nav {
     margin: 0;
@@ -956,14 +1002,39 @@ i.brand {
     width: 100%;
   }
   .navbar.navbar-default.navbar-regions .navbar-nav > li {
+    padding-left: 30px;
+    padding-right: 30px;
     width: auto;
-    text-align: center;
+    text-align: left;
   }
   .navbar.navbar-default.navbar-regions .navbar-nav > li:first-child {
     border-top: 1px solid #d7d7d7;
   }
   .navbar.navbar-default.navbar-regions .navbar-nav > li.active > a {
     border: none;
+  }
+  .regions-dropdown > .dropdown-toggle {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-size: 18px;
+    position: relative;
+  }
+  .regions-dropdown > .dropdown-toggle .marker {
+    font-size: 16px;
+  }
+  .regions-dropdown > .dropdown-toggle .arrow {
+    float: right;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: center;
+    font-size: 18px;
+    line-height: 50px;
   }
 }
 @media (max-width: 780px) {
@@ -984,6 +1055,9 @@ i.brand {
   }
   .carousel-control {
     display: none;
+  }
+  .carousel-indicators {
+    display: block;
   }
 }
 @media (min-width: 992px) and (max-width: 1100px) {

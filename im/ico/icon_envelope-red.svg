@@ -25,7 +25,7 @@
                 <use id="Rectangle-Copy-2" stroke="#FF0000" mask="url(#mask-6)" stroke-width="8" xlink:href="#path-5"></use>
                 <polygon id="Path-2" stroke="#FF0000" stroke-width="4" points="169.100098 76.9311523 169.100098 91.9042192 182.333008 82.9760742"></polygon>
                 <polygon id="Path-2-Copy" stroke="#FF0000" stroke-width="4" transform="translate(23.716553, 84.417686) scale(-1, 1) translate(-23.716553, -84.417686) " points="17.1000977 76.9311523 17.1000977 91.9042192 30.3330078 82.9760742"></polygon>
-                <polygon id="Path-3" stroke="#FA0000" stroke-width="3" points="169.182617 63.8388672 168.951172 0.709960938 30.3366356 0.709960938 30.0117187 64.0253906 0.25 77.109375 0.25 199.147647 198.78046 199.147647 198.78046 78.2275156"></polygon>
+                <polygon id="Path-3" stroke="#FA0000" stroke-width="4" points="169.182617 63.8388672 168.951172 0.709960938 30.3366356 0.709960938 30.0117187 64.0253906 0.25 77.109375 0.25 199.147647 198.78046 199.147647 198.78046 78.2275156"></polygon>
                 <polygon id="Path-4" stroke="#FF0000" stroke-width="4" points="39.9785156 94.980957 39.8276367 8.89257812 160.26416 8.92382812 160.26416 98.0422503 99.4770508 135.992676 40.1777344 97.8608398"></polygon>
                 <polygon id="Path-5" stroke="#FF0000" stroke-width="4" points="9.07275391 91.8901367 9.07275391 181.978516 58.9199219 121.427734 8.99365234 88.9453125"></polygon>
                 <polygon id="Path-5-Copy" stroke="#FF0000" stroke-width="4" transform="translate(165.956787, 135.461914) scale(-1, 1) translate(-165.956787, -135.461914) " points="141.072754 91.8901367 141.072754 181.978516 190.919922 121.427734 140.993652 88.9453125"></polygon>
