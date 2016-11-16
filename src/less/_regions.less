@@ -5,16 +5,34 @@
 
 .regions-dropdown > .dropdown-toggle{
     margin: 0;
-    padding: 10px 10px 10px 25px;
+    padding: 10px 10px 10px 10px;
     background-color: #fff!important;
     border: none;
     color: #000!important;
     font-size: 16px;
     font-weight: normal;
     text-transform: none;
-    background-image: url('../im/ico-map-marker.png')!important;
-    background-position: 10px center;
-    background-repeat: no-repeat;
+
+    .glyphicon{
+        color: #504f4f;
+    }
+    .marker{
+        margin-right: 5px;
+        font-size: 13px;
+    }
+    .arrow{
+        margin-left: 5px;
+        font-size: 12px;
+    }
+}
+.regions-dropdown > .dropdown-toggle .arrow{
+    .glyphicon-menu-down{ display: inline-block}
+    .glyphicon-menu-up{ display: none }
+}
+.regions-dropdown.open > .dropdown-toggle .arrow{
+    .glyphicon-menu-down{ display: none}
+    .glyphicon-menu-up{ display: inline-block }
+
 }
 
 .regions-dropdown.open > .dropdown-toggle.btn-default,
@@ -67,6 +85,25 @@
     background: transparent;
 }
 
+.navbar.navbar-default.navbar-regions .navbar-toggle{
+    background: none;
+}
+.navbar.navbar-default.navbar-regions .navbar-toggle{
+    .glyphicon-menu-down{
+        display: none;
+    }
+    .glyphicon-menu-up{
+        display: inline-block;
+    }
+}
+.navbar.navbar-default.navbar-regions .navbar-toggle.collapsed{
+    .glyphicon-menu-down{
+        display: inline-block;
+    }
+    .glyphicon-menu-up{
+        display: none;}
+}
+
 .navbar.navbar-default.navbar-regions .navbar-collapse{
     padding-left: 0;
     padding-right: 0;
@@ -100,6 +137,10 @@
 .carousel{
     margin: 0 auto;
     max-width: 1520px;
+}
+.carousel-indicators{
+    bottom: -50px;
+    display: none;
 }
 
 .carousel-control{
@@ -151,20 +192,18 @@
 }
 
 .navbar.navbar-default.navbar-regions .nav-lbl{
+    padding: 0 30px;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    line-height: 70px;
+    line-height: 50px;
     background-color: #fff;
     color: #00b7fd;
-    font-size: 24px;
-    text-align: center;
-}
-
-.navbar.navbar-default.navbar-regions .navbar-toggle{
-    border: none;
+    font-size: 22px;
+    text-align: left;
+    cursor: pointer;
 }
 @media (max-width: @grid-float-breakpoint-max){
     .regions-grid-item{
@@ -174,9 +213,19 @@
         width: 50%;
     }
     .navbar.navbar-default.navbar-regions .navbar-collapse{
-        padding-left: 15px;
-        padding-right: 15px;
+        /*padding-left: 15px;
+        padding-right: 15px;*/
     }
+    .navbar.navbar-default.navbar-regions{
+        min-height: 50px;
+    }
+    .navbar.navbar-default.navbar-regions .navbar-toggle{
+        border: none;
+        height: 50px;
+        width: 50px;
+        line-height: 50px;
+    }
+
     .navbar.navbar-default.navbar-regions .navbar-nav{
         margin: 0;
         padding-left: 0;
@@ -184,14 +233,40 @@
         width: 100%;
     }
     .navbar.navbar-default.navbar-regions .navbar-nav >li{
+        padding-left: 30px;
+        padding-right: 30px;
         width: auto;
-        text-align: center;
+        text-align: left;
     }
     .navbar.navbar-default.navbar-regions .navbar-nav >li:first-child{
         border-top: 1px solid #d7d7d7;
     }
     .navbar.navbar-default.navbar-regions .navbar-nav >li.active > a{
         border: none;
+    }
+
+    .regions-dropdown > .dropdown-toggle{
+        padding-top: 12px;
+        padding-bottom: 12px;
+        display: block;
+        width: 100%;
+        text-align: left;
+        font-size: 18px;
+        position: relative;
+    }
+    .regions-dropdown > .dropdown-toggle .marker{
+        font-size: 16px;
+    }
+    .regions-dropdown > .dropdown-toggle .arrow{
+        float: right;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        text-align: center;
+        font-size: 18px;
+        line-height: 50px;
     }
 }
 
@@ -213,6 +288,9 @@
     }
     .carousel-control{
         display: none;
+    }
+    .carousel-indicators{
+        display: block;
     }
 }
 @media (min-width: @screen-md-min) and (max-width: 1100px){

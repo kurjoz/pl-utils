@@ -121,8 +121,12 @@
             <div class="sub-hd">Не знайшли свою компанiю? Сплатiть рахунок за <a class="link_alt" href="https://www.portmone.com.ua/r3/uk/services/budget/requisites/">реквiзитами</a></div>
             <div class="dropdown regions-dropdown">
                 <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <span class="marker glyphicon glyphicon-map-marker"></span>
                     Регіон: <span class="selected_region">Київ</span>
-                    <span class="caret"></span>
+                    <span class="arrow">
+                        <span class="glyphicon glyphicon-menu-down"></span>
+                        <span class="glyphicon glyphicon-menu-up"></span>
+                    </span>
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                     <li class="dropdown-menu_col">
@@ -232,12 +236,11 @@
             </div>
             <nav class="navbar navbar-default navbar-regions">
                     <div class="navbar-header">
-                        <div class="nav-lbl hidden-lg">види платежів</div>
+                        <div data-toggle="collapse" data-target="#carousel-nav" aria-expanded="false" class="nav-lbl hidden-lg">види платежів</div>
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#carousel-nav" aria-expanded="false">
                             <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
+                            <span class="glyphicon glyphicon-menu-down"></span>
+                            <span class="glyphicon glyphicon-menu-up"></span>
                         </button>
                     </div>
                     <div class="collapse navbar-collapse" id="carousel-nav">
@@ -260,6 +263,10 @@
         </div>
         <!-- Carousel ================================================== -->
         <div id="carousel-desktop" class="carousel slide" data-ride="carousel" data-interval="0">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-desktop" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-desktop" data-slide-to="1" class=""></li>
+            </ol>
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
                     <div class="container">
@@ -710,6 +717,18 @@
                     return false;
                 }
             }
+        });
+
+        $(".carousel").swipe({
+
+            swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+
+                if (direction == 'left') $(this).carousel('next');
+                if (direction == 'right') $(this).carousel('prev');
+
+            },
+            allowPageScroll:"vertical"
+
         });
     });
 </script>
