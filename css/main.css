@@ -339,7 +339,14 @@ i.brand {
   background-color: #ffd828;
 }
 .section_hasbg h1 {
-  max-width: 55%;
+  max-width: 70%;
+}
+.adv-list {
+  margin: 30px 0;
+  padding: 0 0 0 20px;
+}
+.adv-list > li {
+  margin: 5px 0;
 }
 @media (max-width: 767px) {
   .section {
@@ -358,16 +365,12 @@ i.brand {
     max-width: none;
   }
 }
-.adv-list {
-  margin: 30px 0;
-  padding: 0 0 0 20px;
-}
-.adv-list > li {
-  margin: 5px 0;
-}
 @media (min-width: 768px) and (max-width: 991px) {
   .section_hasbg .section__aligner {
     background-image: none;
+  }
+  .section_hasbg h1 {
+    max-width: none;
   }
 }
 @media (min-width: 1700px) {
@@ -714,28 +717,27 @@ i.brand {
   text-align: left;
   color: #fff;
 }
-.text-icon-sm:hover {
+.text-icon-sm > a {
+  float: left;
+  color: #fff;
+}
+.text-icon-sm .text-icon-sm__icon {
+  margin: 0;
+}
+.text-icon-sm .text-icon-sm__icon .icon {
+  background-position: top center;
+}
+.text-icon-sm a:hover {
   color: #ff0006;
   text-decoration: none;
   font-weight: bold;
 }
-.text-icon-sm:hover .icon_light {
-  background-image: url('../im/ico/icon_light-act.png');
-}
-.text-icon-sm:hover .icon_gas {
-  background-image: url('../im/ico/icon_gas-act.png');
-}
-.text-icon-sm:hover .icon_heat {
-  background-image: url('../im/ico/icon_heat-act.png');
-}
-.text-icon-sm:hover .icon_water {
-  background-image: url('../im/ico/icon_water-act.png');
-}
-.text-icon-sm:hover .icon_home-circle {
-  background-image: url('../im/ico/icon_home-circle-act.png');
-}
-.text-icon-sm__icon {
-  margin: 0;
+.text-icon-sm a:hover .icon_light,
+.text-icon-sm a:hover .icon_gas,
+.text-icon-sm a:hover .icon_heat,
+.text-icon-sm a:hover .icon_water,
+.text-icon-sm a:hover .icon_home-circle {
+  background-position: bottom center;
 }
 .text-icon-sm__text {
   margin-top: 10px;
@@ -919,6 +921,10 @@ i.brand {
   bottom: -50px;
   display: none;
 }
+.carousel-indicators li,
+.carousel-indicators .active {
+  margin: 0 10px;
+}
 .carousel-control {
   width: 80px;
   min-width: 57px;
@@ -971,7 +977,7 @@ i.brand {
   line-height: 50px;
   background-color: #fff;
   color: #00b7fd;
-  font-size: 22px;
+  font-size: 18px;
   text-align: left;
   cursor: pointer;
 }
