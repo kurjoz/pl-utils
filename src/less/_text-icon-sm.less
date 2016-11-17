@@ -5,32 +5,33 @@
     width: 20%;
     text-align: left;
     color: #fff;
+    > a{
+        float: left;
+        color: #fff;
+    }
 
-    &:hover{
+    .text-icon-sm__icon{
+        margin: 0;
+        .icon{
+            background-position: top center;
+        }
+    }
+
+    a:hover{
         color: @link-color;
         text-decoration: none;
         font-weight: bold;
 
-        .icon_light{
-            background-image: url('../im/ico/icon_light-act.png');
-        }
-        .icon_gas{
-            background-image: url('../im/ico/icon_gas-act.png');
-        }
-        .icon_heat{
-            background-image: url('../im/ico/icon_heat-act.png');
-        }
-        .icon_water{
-            background-image: url('../im/ico/icon_water-act.png');
-        }
+        .icon_light,
+        .icon_gas,
+        .icon_heat,
+        .icon_water,
         .icon_home-circle{
-            background-image: url('../im/ico/icon_home-circle-act.png');
+            background-position: bottom center;
         }
     }
 }
-.text-icon-sm__icon{
-    margin: 0;
-}
+
 .text-icon-sm__text{
     margin-top: 10px;
     margin-left: -10px;

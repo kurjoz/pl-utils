@@ -55,7 +55,14 @@
 }
 .section_hasbg{
     h1{
-        max-width: 55%;
+        max-width: 70%;
+    }
+}
+.adv-list{
+    margin: 30px 0;
+    padding: 0 0 0 20px;
+    > li{
+        margin: 5px 0;
     }
 }
 
@@ -79,16 +86,15 @@
         }
     }
 }
-.adv-list{
-    margin: 30px 0;
-    padding: 0 0 0 20px;
-    > li{
-        margin: 5px 0;
-    }
-}
+
 @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max){
     .section_hasbg .section__aligner{
         background-image: none;
+    }
+    .section_hasbg{
+        h1{
+            max-width: none;
+        }
     }
 }
 @media (min-width: @screen-md-min) and (max-width: @screen-md-max){
