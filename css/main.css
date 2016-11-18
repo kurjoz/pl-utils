@@ -740,6 +740,9 @@ i.brand {
 .text-icon-sm a:hover .icon_home-circle {
   background-position: bottom center;
 }
+.text-icon-sm a:focus {
+  text-decoration: none;
+}
 .text-icon-sm__text {
   margin-top: 10px;
   display: block;
