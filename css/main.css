@@ -328,7 +328,7 @@ i.brand {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d6f1ef', endColorstr='#b4e5e1', GradientType=0);
   /* IE6-9 */
-  overflow: auto;
+  overflow: auto !important;
 }
 .section_hasbg_secondary h2 {
   margin: 0 0 20px;
